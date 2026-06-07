@@ -1,0 +1,12 @@
+[
+   {
+      "name_book": "python",
+      "avtor": "Luth",
+      "pages": 1200
+   },
+   {
+      "name_book": "temnaya storona",
+      "avtor": "Stiven King",
+      "pages": 356
+   }
+]

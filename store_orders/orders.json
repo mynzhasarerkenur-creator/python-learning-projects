@@ -1,0 +1,24 @@
+[
+    {
+        "customer_name": "erkenur",
+        "total_price": "12000"
+    },
+    {
+        "customer_name": "Muslim",
+        "total_price": "34000",
+        "address": "Almaty, Markova 53"
+    },
+    {
+        "customer_name": "Ansar",
+        "total_price": "32000",
+        "pickup_order": "Moskva"
+    },
+    {
+        "customer_name": "Erkenur",
+        "total_price": "23000"
+    },
+    {
+        "customer_name": "Askar",
+        "total_price": "4500"
+    }
+]
