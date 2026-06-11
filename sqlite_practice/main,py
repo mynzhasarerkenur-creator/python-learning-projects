@@ -1,0 +1,22 @@
+import sqlite3
+
+class BankAccount():
+    def __init__(self, owner, balance = 0):
+        self.owner = owner
+        self.balance = balance
+
+
+# connection = sqlite3.connect('sqlite_practice/bank.db')
+# print('База данных подключено')
+
+# cursor = connection.cursor()
+# cursor.execute("""
+# SELECT * FROM accounts            
+# """)
+# accounts = cursor.fetchall()
+
+# connection.commit()
+# for account in accounts:
+#     print(account)
+# connection.close()
+
