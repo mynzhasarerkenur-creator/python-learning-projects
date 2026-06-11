@@ -8,7 +8,8 @@ while True:
     print("2. show account")
     print("3. deposite ")
     print("4. withdraw")
-    print("5. exit")
+    print("5. delete")
+    print("6. exit")
 
     choise = input("your choise: ")
 
@@ -64,6 +65,13 @@ while True:
 
         except ValueError:
             print("введите корректное число")
-    elif choise == "5":
+    elif choise =="5":
+        owner = input("владелец: ")
+        status = storage.delete_account(owner)
+        if status =='not_found':
+            print('пользователь не найден')
+        elif status == "success":
+            print("аккаунт удален")
+    elif choise == "6":
         print("Gud bye! ")
         break

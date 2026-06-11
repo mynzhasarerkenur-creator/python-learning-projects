@@ -90,3 +90,23 @@ def withdraw_account(owner_input, amount):
     connection.commit()
     connection.close()
     return "success", old_balance, new_balance
+
+def delete_account(owner_input):
+    connection = sqlite3.connect(DB_PATH)
+    cursor = connection.cursor()
+    cursor.execute(
+        "SELECT owner FROM accounts WHERE owner = ?",
+        (owner_input,),
+    )
+    result = cursor.fetchone()
+
+    if result is None:
+        connection.close()
+        return "not_found"
+    cursor.execute(
+        "DELETE FROM accounts WHERE owner = ?",
+        (owner_input,),
+    )
+    connection.commit()
+    connection.close()
+    return "success"
